@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}Create Item{% endblock %}
+
+{% block content %}
+    <main>
+        <h1>Create a New Item</h1>
+        <form method="post">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Item Name" maxlength="100" required>
+            <button type="submit">Create</button>
+        </form>
+    </main>
+{% endblock %}
